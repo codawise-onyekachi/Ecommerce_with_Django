@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Product List</title>
+  <title>Ecommerce</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
  
 </head>
@@ -13,10 +13,11 @@
     <li>
         <h2>{{product.name}}</h2>
         <p>{{ product.description}}</p>
-        <p> {{product.price}}</p>
+        <h3>Our price is: {{product.price}}</h3>
         <img src="{{product.image.url}}" alt="{{product.name}}"/>
     </li>
     {% endfor %}
   </ul>
+{% comment %}<a href="{% url 'product_details'%}" class="back-link"> Back to Product Details</a>{% endcomment %}
 </body>
 </html>
