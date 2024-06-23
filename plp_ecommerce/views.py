@@ -31,3 +31,10 @@ def customer_detail(request, pk):
         'customer': customer
     }
     return render(request, 'plp_ecommerce/customer_detail.html', context)
+
+def home(request):
+    context = {
+        'home': home
+    }
+    return render(request, 'plp_ecommerce/home.html', context)
+
