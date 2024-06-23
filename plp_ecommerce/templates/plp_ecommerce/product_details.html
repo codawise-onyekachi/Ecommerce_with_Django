@@ -1,16 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{{product.name}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    <link rel="stylesheet" href="{% static 'plp_ecommerce/style.css' %}">
 </head>
 <body>
     
 
     <ul>
-            {% for product in product %}
+            {% for product in products %}
         <li>
             <h2>{{product.name}}</h2>
             <p>{{ product.description}}</p>
@@ -20,6 +21,6 @@
         </li>
     {% endfor %}
     </ul>
-    {% comment %} <a href="{% url 'product_list'%}" class="back-link"> Back to Product List</a>{% comment %}
+    {% comment %} <a href="{% url 'product_list'%}" class="back-link"> Back to Product List</a>{% endcomment %}
 </body>
 </html>

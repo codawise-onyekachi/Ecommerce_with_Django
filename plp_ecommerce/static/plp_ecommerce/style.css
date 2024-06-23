@@ -1,4 +1,18 @@
 body {
-    background: white url("./media/images/Ecommerce_bg.jpg") no-repeat;
-
+    background: white url("./media/images/Ecommerce_bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
 }
+h1 {
+    color: azure;
+}
+
+a {
+    color: white;
+}
+
+p, h2, h3 {
+    color: greenyellow;
+}
+
